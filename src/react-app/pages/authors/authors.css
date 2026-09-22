@@ -1,0 +1,16 @@
+.authors-page { width: min(760px, calc(100vw - 4rem)); text-align: left; margin: 1rem auto; }
+.authors-page h1 { font-size: 2rem; }
+.author-heading, .author-actions { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+.author-heading { justify-content: space-between; }
+.author-table { overflow-x: auto; }
+.authors-page table { width: 100%; border-collapse: collapse; }
+.authors-page th, .authors-page td { padding: 1rem .5rem; border-bottom: 1px solid #8886; text-align: left; overflow-wrap: anywhere; }
+.author-form fieldset { border: 0; padding: 0; display: grid; gap: .75rem; }
+.author-form input { box-sizing: border-box; width: 100%; padding: .7rem; border: 1px solid #888; border-radius: 6px; font: inherit; background: transparent; color: inherit; }
+.author-form label { margin-top: .75rem; }
+.author-actions { margin-top: 1.5rem; }
+.authors-page [role="alert"], .authors-page .danger { color: #d33c3c; }
+.authors-page button:disabled { opacity: .6; cursor: wait; }
+.authors-page dt { font-weight: bold; margin-top: 1rem; }
+.authors-page dd { margin: .4rem 0; overflow-wrap: anywhere; }
+.app-nav { display: flex; gap: 1.5rem; margin-bottom: 2rem; }

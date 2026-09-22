@@ -12,17 +12,29 @@
     "publish": true
   },
   "dependencies": {
-    "hono": "4.11.1",
-    "react": "19.2.1",
-    "react-dom": "19.2.1"
+    "@hono/standard-validator": "^0.4.0",
+    "@hookform/resolvers": "5.2.2",
+    "@tanstack/react-query": "5.103.1",
+    "dotenv": "^18.0.1",
+    "drizzle-orm": "1.0.0-rc.4",
+    "effect": "4.0.0-beta.83",
+    "hono": "4.13.8",
+    "pg": "^8.23.0",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "react-hook-form": "7.88.0",
+    "react-router": "^8.4.0",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "1.52.1",
     "@eslint/js": "9.39.1",
     "@types/node": "^24.10.1",
+    "@types/pg": "^8.23.1",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "5.1.1",
+    "drizzle-kit": "^1.0.0-rc.4",
     "eslint": "9.39.2",
     "eslint-plugin-react-hooks": "7.0.1",
     "eslint-plugin-react-refresh": "0.4.24",
