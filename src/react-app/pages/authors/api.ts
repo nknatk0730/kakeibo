@@ -17,6 +17,8 @@ async function request(path: string, options?: RequestInit) {
   if (!response.ok) {
     const messages: Record<number, string> = {
       400: "入力内容を確認してください。",
+      401: "ログインの有効期限が切れました。再度ログインしてください。",
+      403: "この操作を行う権限がありません。",
       404: "著者が見つかりません。",
     };
     throw new ApiError(response.status, messages[response.status] ?? `通信に失敗しました（${response.status}）。`);

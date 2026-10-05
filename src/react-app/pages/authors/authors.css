@@ -14,3 +14,7 @@
 .authors-page dt { font-weight: bold; margin-top: 1rem; }
 .authors-page dd { margin: .4rem 0; overflow-wrap: anywhere; }
 .app-nav { display: flex; gap: 1.5rem; margin-bottom: 2rem; }
+
+.app-nav { flex-wrap: wrap; align-items: center; }
+.account-field { display: grid; gap: .4rem; }
+.authors-page h2 { margin-top: 2rem; }

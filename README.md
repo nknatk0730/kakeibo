@@ -88,3 +88,7 @@ npx wrangler tail
 - [Vite Documentation](https://vitejs.dev/guide/)
 - [React Documentation](https://reactjs.org/)
 - [Hono Documentation](https://hono.dev/)
+
+## 認証・ユーザー管理
+
+Better Auth を利用した登録・メール確認・ログイン・パスワード再設定・ユーザー管理を実装しています。設定と初回管理者の作成方法は [認証の手順](docs/authentication.md) を参照してください。

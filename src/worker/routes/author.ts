@@ -1,21 +1,13 @@
 import { Hono } from 'hono';
 import { sValidator } from '@hono/standard-validator'
 import { z } from 'zod';
-import { createDb } from "../../db/db.ts";
+import type { AppEnv } from "../middleware/database";
+import { requireAuth } from "../middleware/require-auth";
 import { AuthorsTable } from '../../db/schema.ts';
 import { eq } from "drizzle-orm";
 
-const authors = new Hono<{ Variables: { db: ReturnType<typeof createDb> } }>();
-
-authors.use("*", async (c, next) => {
-    const db = createDb();
-    c.set("db", db);
-    try {
-        await next();
-    } finally {
-        await db.$client.end();
-    }
-});
+const authors = new Hono<AppEnv>();
+authors.use("*", requireAuth);
 
 const createAuthorSchema = z.object({
     name: z.string().trim().min(1),
